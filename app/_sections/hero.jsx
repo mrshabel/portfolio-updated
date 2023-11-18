@@ -23,8 +23,8 @@ export default function Hero() {
           implementation, I ensure every aspect aligns seamlessly with your
           unique requirements.
         </p>
-        <Link href="/" className="flex items-center gap-1">
-          <span className="underline font-normal ">
+        <Link href="/" className="flex items-center gap-1 text-sm">
+          <span className="underline font-semibold ">
             Take me to the magic land
           </span>
           <span>
