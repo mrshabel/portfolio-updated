@@ -6,7 +6,7 @@ import DeveloperTools from "./_sections/tools";
 
 export default function Home() {
   return (
-    <main className="flex  flex-col items-center mx-auto min-h-screen  p-24 px-6 max-w-4xl ">
+    <main className="flex  flex-col items-center  ">
       <Hero />
       <Separator className="my-8 sm:my-12 w-5" />
       <Projects />

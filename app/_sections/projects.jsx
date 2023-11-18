@@ -13,7 +13,10 @@ export default function Projects() {
             project.selected && <ProjectCard key={index} project={project} />
         )}
       </section>
-      <Link href="/" className="flex items-center gap-1 text-[14px] my-10">
+      <Link
+        href="/projects"
+        className="flex items-center gap-1 text-[14px] my-10"
+      >
         <span className="underline font-semibold ">View all projects</span>
         <span>
           <MoveRight className="h-3 w-3" />
