@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="w-full">
       <section className="mb-2">
         <Image
-          src={"/hero.png"}
+          src={"/profile.png"}
           loading="lazy"
           alt="hero"
           height={60}
