@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Navbar />
-          <main className=" animate-fade-in-up overflow-x-hidden mx-auto min-h-screen  p-24 px-6 max-w-4xl">
-            {children}{" "}
+          <main className=" animate-fade-in-up overflow-x-hidden mx-auto min-h-screen  p-24 px-6 max-w-5xl">
+            {children}
           </main>
         </ThemeProvider>
       </body>

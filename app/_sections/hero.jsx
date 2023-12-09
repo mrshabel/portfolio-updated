@@ -12,23 +12,24 @@ export default function Hero() {
           alt="hero"
           height={60}
           width={60}
+          className="hover:-rotate-12  transition-transform"
         />
       </section>
       <section className="flex flex-col gap-2 ">
-        <h2 className="font-semibold text-lg">I craft interfaces</h2>
-        <p className="font-light ">
-          Here, I engineer custom solutions precisely tailored to meet your
-          needs. With a fusion of creativity and technical prowess, I transform
-          challenges into bespoke software solutions. From conceptualization to
-          implementation, I ensure every aspect aligns seamlessly with your
-          unique requirements.
+        <h2 className="font-semibold text-lg">Hey there, I'm Shabel!</h2>
+        <p className="font-light">
+          I engineer custom software solutions, tailoring them precisely to your
+          needs.
         </p>
-        <Link href="/" className="flex items-center gap-1 text-sm">
+        <p className="font-light">
+          I also create content about football through articles.
+        </p>
+        <Link href="/blog" className="flex items-center gap-1 text-sm">
           <span className="underline font-semibold ">
             Take me to the magic land
           </span>
           <span>
-            <MoveUpRight className="h-3 w-3" />
+            <MoveUpRight className="h-2 w-2" />
           </span>
         </Link>
       </section>

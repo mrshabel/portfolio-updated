@@ -11,7 +11,7 @@ export default function DeveloperTools() {
           <div key={index} className="text-[12px] font-semibold uppercase">
             <div className="flex justify-between w-full items-center mb-1">
               <p>{tool.name}</p>
-              <p>{tool.value}%</p>
+              {/* <p>{tool.value}%</p> */}
             </div>
             <Progress className="w-full" value={tool.value} />
           </div>
