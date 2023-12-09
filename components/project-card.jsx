@@ -1,11 +1,9 @@
 import { MoveUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <section className="w-full flex flex-col space-y-8 sm:flex-row-reverse sm:justify-between sm:items-center sm:gap-8 md:gap-12 ">
-      <div className="w-full h-[250px] sm:w-[250px] md:w-[300px] sm:h-[150px] rounded-md shadow-md bg-muted blur-[1px] ">
-        {project.image}
-      </div>
+    <section className="w-full flex flex-col space-y-8 md:gap-12 ">
       <div className="flex flex-col gap-1 w-full">
         <h1 className="font-medium text-lg ">{project.name}</h1>
         <p className="font-extralight text-[12px]">{project.duration}</p>
@@ -21,6 +19,11 @@ export default function ProjectCard({ project }) {
           </span>
         </a>
       </div>
+      <Image
+        src={project.image}
+        alt={project.name}
+        className="object-center rounded-xl h-[250px] border-4 mx-auto sm:w-[80%] md:h-[400px]"
+      />
     </section>
   );
 }
