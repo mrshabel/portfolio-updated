@@ -5,11 +5,11 @@ import { Button } from "./ui/button";
 export default function Navbar() {
   return (
     <header className="fixed h-[8vh] w-screen z-50 backdrop-blur-sm  px-4 py-4 animate-fade-in-down">
-      <nav className="mx-auto h-full max-w-4xl">
+      <nav className="mx-auto h-full w-full px-6 max-w-5xl ">
         <section className="flex justify-between items-center">
           <section className="">
             <Link href="/">
-              <span className="font-bold text-lg dark:text-gold">SG</span>
+              <span className="font-bold text-lg dark:text-gold">Sha.Bel</span>
             </Link>
           </section>
           <section className="flex gap-2 items-center">
