@@ -16,10 +16,9 @@ export default function Hero() {
         />
       </section>
       <section className="flex flex-col gap-2 ">
-        <h2 className="font-semibold text-lg">Hey there, I&apos;m Shabel!</h2>
+        <h2 className="font-semibold text-lg">Hi there, I&apos;m Shabel</h2>
         <p className="font-light">
-          I engineer custom software solutions, tailoring them precisely to your
-          needs.
+          a passionate software engineer based in Ghana.
         </p>
         <p className="font-light">
           I also create content about football through articles.
