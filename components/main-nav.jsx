@@ -1,6 +1,12 @@
+import { Fuggles } from "next/font/google";
 import Link from "next/link";
 import ThemeToggler from "./theme-toggler";
 import { Button } from "./ui/button";
+
+const fuggles = Fuggles({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Navbar() {
   return (
@@ -9,7 +15,11 @@ export default function Navbar() {
         <section className="flex justify-between items-center">
           <section className="">
             <Link href="/">
-              <span className="font-bold text-lg dark:text-gold">Sha.Bel</span>
+              <span
+                className={`${fuggles.className} font-bold text-3xl dark:text-gold`}
+              >
+                Sha.Bel
+              </span>
             </Link>
           </section>
           <section className="flex gap-2 items-center">
