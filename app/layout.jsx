@@ -17,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-[radial-gradient(#d2d6db_1px,transparent_1px)] dark:bg-[radial-gradient(#363636_0.6px,transparent_1px)] [background-size:50px_50px]`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -25,7 +27,7 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Navbar />
-          <main className=" animate-fade-in-up overflow-x-hidden mx-auto min-h-screen  p-24 px-6 max-w-5xl">
+          <main className=" animate-fade-in-up overflow-x-hidden mx-auto min-h-screen  p-24 px-6 max-w-5xl ">
             {children}
           </main>
         </ThemeProvider>
