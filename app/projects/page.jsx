@@ -1,18 +1,13 @@
+import GoBack from "@/components/go-back";
 import { Separator } from "@/components/ui/separator";
 import { projects } from "@/db/projects";
-import { MoveLeft, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function page() {
   return (
     <section className="w-full">
-      <Link href="/" className="flex items-center gap-2 text-[14px] my-8">
-        <span>
-          <MoveLeft className="h-3 w-3" />
-        </span>
-        <span className="font-semibold">Go back</span>
-      </Link>
+      <GoBack />
       <h1 className="text-4xl my-8">Projects</h1>
       <section className="flex flex-col gap-12 sm:gap-16 ">
         {projects.map((project, index) => (
