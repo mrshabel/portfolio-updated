@@ -20,7 +20,7 @@ export default function page({ params: { slug } }) {
             <section className="text-primary/90 last:pb-0">
                 {blog.content.split("\n").map((paragraph, index) => (
                     <p
-                        className="px-2 py-2 text-sm leading-6 tracking-widest text-justify"
+                        className="px-2 py-2 text-sm leading-6 tracking-widest"
                         key={index}
                     >
                         {paragraph}
