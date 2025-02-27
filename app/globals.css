@@ -3,78 +3,116 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+        --primary: 222.2 47.4% 11.2%;
+        --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
-  }
+        --radius: 0.5rem;
 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 210 40% 98%;
+        --main: #88aaee;
+        --overlay: rgba(0, 0, 0, 0.8);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+        --bg: #dfe5f2;
+        --bw: #ffffff;
+        --blank: #000000;
+        --border: #000000;
+        --text: #000000;
+        --mtext: #000000;
+        --ring-offset: #ffffff;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+        --border-radius: 5px;
+        --box-shadow-x: 4px;
+        --box-shadow-y: 4px;
+        --reverse-box-shadow-x: -4px;
+        --reverse-box-shadow-y: -4px;
+        --base-font-weight: 500;
+        --heading-font-weight: 700;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+        --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+    }
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+        --primary: 210 40% 98%;
+        --primary-foreground: 222.2 47.4% 11.2%;
 
-    --border: 46 92% 48%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: #ebb60a;
-  }
-}
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 46 92% 48%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: #ebb60a;
+
+        --bg: #272933;
+        --bw: #212121;
+        --blank: #ffffff;
+        --border: #000000;
+        --text: #e6e6e6;
+        --mtext: #000000;
+        --ring-offset: #000000;
+
+        --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+    }
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+@layer components {
+    .btn-neo {
+        @apply border border-border bg-primary text-primary-foreground 
+               px-4 py-2 font-mono font-bold uppercase tracking-wide 
+               hover:bg-accent hover:text-accent-foreground
+               transition-all duration-200;
+        box-shadow: var(--shadow);
+    }
+
+    .tag-neo {
+        @apply border border-border bg-secondary text-secondary-foreground
+               px-2 py-1 font-mono text-xs uppercase;
+        box-shadow: var(--shadow);
+    }
 }

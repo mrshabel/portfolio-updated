@@ -2,6 +2,7 @@ import { Fuggles } from "next/font/google";
 import Link from "next/link";
 import ThemeToggler from "./theme-toggler";
 import { Button } from "./ui/button";
+import { Mail } from "lucide-react";
 
 const fuggles = Fuggles({
     weight: "400",
@@ -22,19 +23,18 @@ export default function Navbar() {
                             </span>
                         </Link>
                     </section>
-                    <section className="flex gap-2 items-center">
+                    <section className="flex gap-3 items-center">
                         <ThemeToggler />
 
-                        <Button
-                            asChild
-                            variant="outline"
-                            className="rounded-full dark:border-gold "
-                        >
+                        <Button asChild size="icon">
                             <a
                                 href="mailto:shabel500@gmail.com"
                                 target="_blank"
                             >
-                                contact
+                                <Mail />
+                                <span className="sr-only">
+                                    Contact Me via Email
+                                </span>
                             </a>
                         </Button>
                     </section>

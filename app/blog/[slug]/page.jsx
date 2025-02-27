@@ -11,7 +11,7 @@ export default function page({ params: { slug } }) {
     if (!blog) return notFound();
     return (
         <section className="w-full">
-            <div className="flex flex-col gap-2 my-5">
+            <div className="flex flex-col gap-2 my-5 mb-2">
                 <h1 className="text-4xl">{blog.title}</h1>
                 <p className="text-primary/90 dark:text-gold/90">
                     Written by: {blog.author}
@@ -20,7 +20,7 @@ export default function page({ params: { slug } }) {
             <section className="text-primary/90 last:pb-0">
                 {blog.content.split("\n").map((paragraph, index) => (
                     <p
-                        className="px-2 py-2 text-sm leading-6 tracking-widest"
+                        className="px-2 py-2 text-lg leading-6 tracking-wide"
                         key={index}
                     >
                         {paragraph}
