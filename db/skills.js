@@ -14,7 +14,7 @@ export const skills = [
     },
     {
         category: "DevOps & Tools",
-        tools: ["Docker", "Git", "Nginx", "CI/CD Pipelines"],
+        tools: ["Docker", "Git", "Nginx", "GitHub Actions"],
     },
     {
         category: "Architectural Concepts",

@@ -59,7 +59,7 @@ export default function ProjectCard({ project }) {
             {/* display link to project only if a ui exist */}
             {project.link && (
                 <CardFooter className="p-4 pt-0 flex gap-3">
-                    <Button asChild variant="secondary">
+                    <Button asChild>
                         <a
                             href={project.link}
                             target="_blank"

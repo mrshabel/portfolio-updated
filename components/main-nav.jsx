@@ -17,7 +17,7 @@ export default function Navbar() {
                     <section className="">
                         <Link href="/">
                             <span
-                                className={`${fuggles.className} font-bold text-3xl dark:text-gold`}
+                                className={`${fuggles.className} font-bold text-3xl text-main`}
                             >
                                 Sha.Bel
                             </span>
