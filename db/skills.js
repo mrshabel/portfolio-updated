@@ -1,12 +1,12 @@
 export const skills = [
     {
         category: "Programming Languages",
-        tools: ["TypeScript", "Python", "Go"],
+        tools: ["Go", "Python", "TypeScript"],
     },
     { category: "Frontend Frameworks", tools: ["React", "Next.js"] },
     {
         category: "Backend Frameworks",
-        tools: ["Node.js", "Express", "FastAPI"],
+        tools: ["Gin", "FastAPI", "Express.js"],
     },
     {
         category: "Databases",
@@ -14,7 +14,14 @@ export const skills = [
     },
     {
         category: "DevOps & Tools",
-        tools: ["Docker", "Git", "Nginx", "GitHub Actions"],
+        tools: [
+            "Docker",
+            "Prometheus",
+            "Grafana",
+            "Git",
+            "Nginx",
+            "GitHub Actions",
+        ],
     },
     {
         category: "Architectural Concepts",
@@ -22,6 +29,7 @@ export const skills = [
             "Distributed Systems",
             "Event-Driven Architecture",
             "RESTful APIs",
+            "gRPC",
             "Microservices",
             "RBAC",
         ],

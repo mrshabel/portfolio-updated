@@ -23,7 +23,7 @@ export default function BlogSection({ blog }) {
                                     </Link>
                                 </h2>
                             </div>
-                            <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                            <div className="prose max-w-none text-lg leading-7 text-gray-500 dark:text-gray-400">
                                 {blog.summary}
                             </div>
                         </div>
