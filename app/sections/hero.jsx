@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <section className="w-full">
-            <section className="mb-4">
+            <section className="mb-4 mt-6">
                 <div className="w-fit border-border shadow-[4px_4px_0_border]">
                     <Image
                         src="/profile.png"
@@ -28,9 +28,7 @@ export default function Hero() {
                 </p>
                 <div className="flex items-center gap-2">
                     <div className="h-2 w-2 rounded-full bg-main animate-pulse"></div>
-                    <code className="font-mono text-xs">
-                        Currently exploring Go
-                    </code>
+                    <code className="font-mono text-xs">Gopher</code>
                 </div>
                 <Button className="w-fit mt-4">
                     <Link

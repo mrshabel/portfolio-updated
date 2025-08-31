@@ -1,7 +1,5 @@
 import BlogSection from "@/components/blog-section";
 import { Separator } from "@/components/ui/separator";
-import { MoveLeft } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import fs from "fs";
 import path from "path";
@@ -34,7 +32,7 @@ export default function page() {
             <section className="space-y-3 md:space-y-4 my-6 lg:my-8">
                 <h1 className="text-3xl md:text-4xl font-bold">Blog</h1>
                 <p className="text-lg leading-7">
-                    My opinions on football curated as articles.
+                    My opinions on football & systems curated as articles.
                 </p>
             </section>
             <Separator

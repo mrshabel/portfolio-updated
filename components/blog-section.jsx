@@ -17,7 +17,7 @@ export default function BlogSection({ blog }) {
                     <div className="space-y-5 xl:col-span-3">
                         <div className="space-y-6">
                             <div>
-                                <h2 className="text-2xl dark:text-gold/90 font-bold leading-8 tracking-tight">
+                                <h2 className="text-2xl font-bold leading-8 tracking-tight">
                                     <Link href={`/blog/${blog.slug}`}>
                                         {blog.title}
                                     </Link>
@@ -30,7 +30,7 @@ export default function BlogSection({ blog }) {
                         <div className="text-base font-medium leading-6">
                             <Link
                                 href={`/blog/${blog.slug}`}
-                                className="text-primary-500 text-sm hover:text-primary-600 dark:hover:text-gold"
+                                className="text-primary-500 text-sm hover:text-primary-600"
                                 aria-label={`Read more: "${blog.title}"`}
                             >
                                 Read more &rarr;

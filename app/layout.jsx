@@ -6,9 +6,9 @@ import Navbar from "@/components/main-nav";
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "600", "800"] });
 
 export const metadata = {
-    title: "Mr. ShaBel | Portfolio",
+    title: "Shabel - Software Engineer",
     description:
-        "A curated showcase of Mr. ShaBel's professional skills and accomplishments.",
+        "Building distributed systems and backend infrastructure with Go and Python.",
     icons: {
         icon: "/profile.png",
     },
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
                     disableTransitionOnChange
                 >
                     <Navbar />
-                    <main className="mx-auto min-h-screen p-12 sm:p-24 max-w-6xl animate-fade-in-up overflow-x-hidden">
+                    <main className="mx-auto min-h-screen p-12 px-6 sm:p-24 max-w-6xl animate-fade-in-up overflow-x-hidden">
                         {children}
                     </main>
                 </ThemeProvider>

@@ -3,7 +3,7 @@ title: "The SGQueue Story: Building a Message Queue with PostgreSQL"
 date: "2024-03-15"
 author: "Shabel Gumah"
 summary: "My adventures of building a message queue on top of PostgreSQL."
-image: "/images/sgqueue_blog_image.jpg"
+image: "/images/sgqueue_image.jpg"
 ---
 
 Shabel here again, and oh, today's writeup isn't about my usual football rants and hypes. My late adventures on YouTube led me to a video by `@fireship` where he talked about supporting pub/sub in PostgreSQL. I actually got curious and surprised so I began my quest of finding out how feasible this is due to certain complications in delivery guarantees of message queue based systems. Two things I found which is worth sharing is the reason behind me building SGQueue, a cheeky way of naming my project as `Shabel Gumah's Queue`.
